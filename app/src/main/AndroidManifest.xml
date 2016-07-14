@@ -23,6 +23,14 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="it.skarafaz.mercury.activity.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="it.skarafaz.mercury.activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.skarafaz.mercury.activity.MainActivity" />
+        </activity>
+        <activity
             android:name="it.skarafaz.mercury.activity.LogActivity"
             android:label="@string/title_activity_log"
             android:parentActivityName="it.skarafaz.mercury.activity.MainActivity">

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="pref_cat_ui"
+        android:title="@string/pref_cat_ui_title">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_sort_cmd"
+            android:summary="@string/pref_sort_cmd_summ"
+            android:title="@string/pref_sort_cmd" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_cat_ssh"
+        android:title="@string/pref_cat_ssh_title">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_key"
+            android:summary="@string/pref_key_summ"
+            android:title="@string/pref_key" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -70,6 +70,9 @@ public class MainActivity extends MercuryActivity {
             case R.id.action_reload:
                 loadConfigFiles();
                 return true;
+            case R.id.action_settings:
+                startActivity(new Intent(this, SettingsActivity.class));
+                return true;
             case R.id.action_log:
                 startActivity(new Intent(this, LogActivity.class));
                 return true;

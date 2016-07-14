@@ -58,7 +58,11 @@ public class ConfigManager {
                 if (configDir.exists() && configDir.isDirectory()) {
                     for (File file : FileUtils.listFiles(configDir, new String[]{"json", "JSON"}, false)) {
                         try {
-                            servers.add(mapper.readValue(file));
+                            Server server = mapper.readValue(file);
+                            if (SettingsManager.getInstance().getSortCmd()) {
+                                Collections.sort(server.getCommands());
+                            }
+                            servers.add(server);
                         } catch (IOException | ValidationException e) {
                             result = LoadConfigExitStatus.ERRORS_FOUND;
                             logger.error(e.getMessage().replace("\n", " "));

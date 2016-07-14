@@ -26,4 +26,12 @@
     <string name="validation_invalid">is invalid</string>
     <string name="validation_file">Failed to validate [%s]: </string>
     <string name="settings">Settings</string>
+    <string name="pref_sort_cmd">Sort commands by name</string>
+    <string name="pref_sort_cmd_summ">Check to sort commands by name, leave unchecked to display commands in the same order they appear in the config file</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="pref_cat_ui_title">User Interface</string>
+    <string name="pref_cat_ssh_title">SSH</string>
+    <string name="pref_key_summ">Check to enable public key authentication, leave unchecked to disable it</string>
+    <string name="pref_key">Enable public key authentication</string>
 </resources>
