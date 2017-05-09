@@ -255,6 +255,10 @@ public class MainActivity extends MercuryActivity {
     }
 
     protected void onCommandListChanged() {
-        ((CommandListAdapter) adapter.getCurrentFragment().getListAdapter()).notifyDataSetInvalidated();
+        runOnUiThread(new Runnable() {
+            public void run() {
+                ((CommandListAdapter) adapter.getCurrentFragment().getListAdapter()).notifyDataSetChanged();
+            }
+        });
     }
 }
